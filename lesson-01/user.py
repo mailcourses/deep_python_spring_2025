@@ -28,3 +28,8 @@ class User:
             ]
 
         return friends
+
+
+if __name__ == "__main__":
+    usr = User("steve", 42)
+    print(usr.greetings())
