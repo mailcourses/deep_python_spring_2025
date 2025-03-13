@@ -115,7 +115,7 @@ class TestUser(unittest.TestCase):
         with self.assertRaises(Exception) as err:
             usr.get_friends()
 
-        self.assertEqual("connection error", str(err.exception))
+        self.assertEqual("io error", str(err.exception))
 
         calls = [
             mock.call("/friends", "steve", part=None),
